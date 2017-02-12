@@ -16,13 +16,13 @@ public class Password
         if(pass.equals("yes"))
         {
         
-            System.out.print("Enter a password ");
+            System.out.print("Please enter a password: ");
             password = keys.nextLine();
         
-            System.out.println("You Password is " + password.length() + " characters long");
+            System.out.println("You password is " + password.length() + " characters long.");
             if(password.length() >= 6 && password.length() <= 12)
             {
-                System.out.println("Your password has the right length.");
+                System.out.println("Your password is the right length.");
             }
             else
             {
@@ -47,19 +47,19 @@ public class Password
             }
             if(digit == false)
             {
-                System.out.println("The password needs a number. ");
+                System.out.println("Your password needs a number.");
             }
             if(Upper == false)
             {
-                System.out.println("Your need an Upper case letter");
+                System.out.println("Your password needs an upper case letter.");
             }
             if(Lower == false)
             {
-                System.out.println("You need a lower case letter");
+                System.out.println("Your password needs a lower case letter.");
             }
             if(digit == true && Upper == true && Lower == true)
             {
-                System.out.println("Your password is all set!");
+                System.out.println("Your password meets all the criteria.");
             }
         }
  
